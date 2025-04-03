@@ -65,7 +65,12 @@ Pdf_Converter/
    Visit: `http://127.0.0.1:5000/`
 
 ## 📷 Screenshots
-![4](https://github.com/user-attachments/assets/4a714adc-e774-4c54-a565-fa676e0fffee)
+Merging PDF's example.
+![1](https://github.com/user-attachments/assets/f921d425-2c67-4c93-a426-c3ba4746f200)
+![2 1](https://github.com/user-attachments/assets/6d2bd2f7-0959-4668-a1fc-35c171e125ec)
+![3](https://github.com/user-attachments/assets/0f05c1dc-499c-4e86-93cd-e6f83ef5eec1)
+![4](https://github.com/user-attachments/assets/244906a3-5514-4b2c-9541-ecfd545996fb)
+
 
 
 ## 🤝 Contributing
