@@ -1,0 +1,1 @@
+flask PyPDF2 pdf2docx docx2pdf pdfplumber pandas comtypes

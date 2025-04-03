@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Tools</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to DocFlex</h1>
+        <h2>Transform PDFs Like a Pro – Fast, Free, and Easy!</h2>
+        <p>Merge, split, convert, and organize PDFs with just a few clicks.</p>
+
+        <div class="grid">
+            <!-- Merge PDF -->
+            <div class="tool">
+                <img src="{{ url_for('static', filename='icons/merge.png') }}" alt="Merge PDF">
+                <h3>Merge PDF</h3>
+                <p>Combine PDFs in the order you want.</p>
+                <form action="/merge" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="files" multiple required>
+                    <button class="btn" type="submit">Upload & Merge</button>
+                </form>
+            </div>
+
+            <!-- Split PDF -->
+            <div class="tool">
+                <img src="{{ url_for('static', filename='icons/split.png') }}" alt="Split PDF">
+                <h3>Split PDF</h3>
+                <p>Separate pages into independent files.</p>
+                <form action="/split" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" required>
+                    <button class="btn" type="submit">Upload & Split</button>
+                </form>
+            </div>
+
+            <!-- PDF to Word -->
+            <div class="tool">
+                <img src="{{ url_for('static', filename='icons/pdf_word.png') }}" alt="PDF to Word">
+                <h3>PDF to Word</h3>
+                <p>Convert PDF to editable DOCX.</p>
+                <form action="/pdf_to_word" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" required>
+                    <button class="btn" type="submit">Convert</button>
+                </form>
+            </div>
+
+            <!-- Word to PDF -->
+            <div class="tool">
+                <img src="{{ url_for('static', filename='icons/word_pdf.png') }}" alt="Word to PDF">
+                <h3>Word to PDF</h3>
+                <p>Convert DOCX to PDF format.</p>
+                <form action="/word_to_pdf" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" required>
+                    <button class="btn" type="submit">Convert</button>
+                </form>
+            </div>
+
+            <!-- PDF to PowerPoint -->
+            <div class="tool">
+                <img src="{{ url_for('static', filename='icons/pdf_ppt.png') }}" alt="PDF to PowerPoint">
+                <h3>PDF to PowerPoint</h3>
+                <p>Convert PDF to PPTX slides.</p>
+                <form action="/pdf_to_ppt" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" required>
+                    <button class="btn" type="submit">Convert</button>
+                </form>
+            </div>
+
+            <!-- PowerPoint to PDF -->
+            <div class="tool">
+                <img src="{{ url_for('static', filename='icons/ppt_pdf.png') }}" alt="PowerPoint to PDF">
+                <h3>PowerPoint to PDF</h3>
+                <p>Convert PPTX to PDF.</p>
+                <form action="/ppt_to_pdf" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" required>
+                    <button class="btn" type="submit">Convert</button>
+                </form>
+            </div>
+
+            <!-- PDF to Excel -->
+            <div class="tool">
+                <img src="{{ url_for('static', filename='icons/pdf_excel.png') }}" alt="PDF to Excel">
+                <h3>PDF to Excel</h3>
+                <p>Extract tables from PDF.</p>
+                <form action="/pdf_to_excel" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" required>
+                    <button class="btn" type="submit">Convert</button>
+                </form>
+            </div>
+
+            <!-- Excel to PDF -->
+            <div class="tool">
+                <img src="{{ url_for('static', filename='icons/excel_pdf.png') }}" alt="Excel to PDF">
+                <h3>Excel to PDF</h3>
+                <p>Convert XLSX to PDF.</p>
+                <form action="/excel_to_pdf" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" required>
+                    <button class="btn" type="submit">Convert</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+		<p>New features coming soon, including - JPG to PDF, PDF to JPG, HTML to PDF, adding page numbers to PDFs, and more...</p>
+	</footer>
+</body>
+</html>
