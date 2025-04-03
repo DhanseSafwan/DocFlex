@@ -1,7 +1,7 @@
-# PDF Converter Web App
+# DocFlex - PDF Converter Web App
 
 ## 📌 Project Description
-The **PDF Converter Web App** is a powerful and user-friendly tool that allows users to seamlessly convert, merge, split, and manage PDFs. It supports multiple file format conversions, making document processing easy and efficient.
+The **DocFlex - PDF Converter Web App** is a powerful and user-friendly tool that allows users to seamlessly convert, merge, split, and manage PDFs. It supports multiple file format conversions, making document processing easy and efficient.
 
 ## 🚀 Key Features
 - **Merge PDFs** → Combine multiple PDF files into one.
